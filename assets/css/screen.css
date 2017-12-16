@@ -28,6 +28,7 @@ production stylesheet in assets/built/screen.css
 /* ---------------------------------------------------------- */
 @import "global.css";
 @import "page-contact.css";
+@import "cookie-info.css";
 
 body {
     background: #f4f8fb;

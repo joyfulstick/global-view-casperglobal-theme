@@ -1,0 +1,30 @@
+@import "./global.css";
+
+.cookie__container {
+  border-top: 5px solid var(--forest);
+  background-color: rgba(255, 255, 255, .98);
+  box-shadow: 0 4px 22px 8px rgba(0, 0, 0, .7);
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.cookie__info {
+  margin: 0 1em 0 0;
+  font-family: serif;
+  text-align: center;
+}
+
+.cookie__btn {
+  font-family: sans-serif;
+  color: var(--forest);
+  background: none;
+  border: 1px solid var(--forest);
+  padding: .5em 1em;
+  border-radius: 2em;
+}
