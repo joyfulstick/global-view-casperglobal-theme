@@ -1,0 +1,58 @@
+@import "global.css";
+
+:focus,
+:invalid {
+  outline: none;
+  box-shadow: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.group__label {
+  display: flex;
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: var(--midgray);
+  text-transform: uppercase;
+}
+
+.form__btn {
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  font-family: sans-serif;
+  color: var(--midgray);
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid var(--lightgray);
+  padding: 0.5em 1em;
+  border-radius: 2em;
+}
+
+.form__btn:focus,
+.form__input:focus {
+  background-color: var(--whitegray);
+}
+
+.form__input {
+  width: 30rem;
+  font-size: 1.8rem;
+  font-family: serif;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.form__input:invalid {
+  border-bottom: 1px dashed var(--crimson);
+}

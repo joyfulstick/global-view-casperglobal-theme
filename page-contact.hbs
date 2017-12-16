@@ -1,0 +1,69 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- The big featured header, it uses blog cover image as a BG if available --}}
+<header class="site-header outer">
+    <div class="inner">
+        {{> "site-nav"}}
+    </div>
+</header>
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+
+            <header class="post-full-header">
+                <h1 class="post-full-title">{{title}}</h1>
+            </header>
+
+            {{#if feature_image}}
+            <figure class="post-full-image" style="background-image: url({{feature_image}})">
+            </figure>
+            {{/if}}
+
+            <section class="post-full-content">
+                {{content}}
+                {{!-- Contact fomrm --}}
+                <form name="contact"
+                action="https://formspree.io/globalviewmail@gmail.com" method="POST"
+                class="form">
+                  <fieldset class="form__group">
+                    <label class="group__label">Name</label>
+                    <input type="text" name="name" class="form__input">
+                  </fieldset>
+                  <fieldset class="form__group">
+                    <label class="group__label">Email</label>
+                    <input type="email" name="_replyto" class="form__input">
+                  </fieldset>
+                  <fieldset class="form__group">
+                    <label class="group__label">Message</label>
+                    <textarea type="text" name="message" class="form__input"></textarea>
+                  </fieldset>
+                  <div class="form__group">
+                    <input type="submit" value="Send" class="form__btn">
+                  </div>
+                </form>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+
+{{/post}}
+
+{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
+{{#contentFor "scripts"}}
+<script>
+$(function() {
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+});
+</script>
+<script src="{{asset "js/page-contact.js"}}"></script>
+{{/contentFor}}
