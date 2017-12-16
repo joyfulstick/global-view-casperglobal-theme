@@ -1,6 +1,6 @@
 # The Global View
 
-The Global View is a travel blog hosted on Amazon EC2.
+[The Global View](http://globalview.pl) is a travel blog hosted on Amazon EC2.
 The production stack is:
 
 - Ubuntu 16.04
