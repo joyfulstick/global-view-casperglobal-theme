@@ -7,6 +7,7 @@ The production stack is:
 - MySQL
 - NGINX
 - Node.js
+- [Ghost](http://github.com/tryghost/ghost/)
 
 &nbsp;
 
@@ -17,7 +18,7 @@ The production stack is:
 
 # CasperGlobal
 
-The Global View theme based on the default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper. If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
+The Global View theme based on the default theme Casper for Ghost.
 
 &nbsp;
 
