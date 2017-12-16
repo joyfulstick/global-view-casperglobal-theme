@@ -1,3 +1,20 @@
+# The Global View
+
+The Global View is a travel blog hosted on Amazon EC2.
+The production stack is:
+
+- Ubuntu 16.04
+- MySQL
+- NGINX
+- Node.js
+
+&nbsp;
+
+![screenshot-mobile](./assets/screenshot-mobile.jpg)
+
+&nbsp;
+
+
 # CasperGlobal
 
 The Global View theme based on the default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper. If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
