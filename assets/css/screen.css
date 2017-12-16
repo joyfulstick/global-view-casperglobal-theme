@@ -164,13 +164,13 @@ body {
 }
 
 .site-logo {
-    max-height: 45px;
+    max-height: 145px;
 }
 
 .site-description {
     z-index: 10;
     margin: 0;
-    padding: 5px 0;
+    padding: 15px 0 0 15px;
     font-size: 2.2rem;
     font-weight: 300;
     letter-spacing: 0.5px;
@@ -265,6 +265,12 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 10px 12px;
     color: #fff;
     opacity: 0.8;
+}
+
+@media (min-width: 900px) {
+  .nav li a {
+    font-size: 1.5rem;
+  }
 }
 
 .nav li a:hover {
